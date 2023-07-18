@@ -1,0 +1,317 @@
+:root {
+    --primary-color: #841BFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+.has-notification {
+    transform: translateY(3rem);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 255, 255);
+    background-position: center, 1px -25px;
+    background-repeat: no-repeat;
+    background-size: cover, 100% auto;
+    padding-top: 110px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+#logo {
+    width: 120px;
+    display: inline-block;
+}
+
+#like {
+    width: 90%;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+#video {
+    width: 90%;
+    margin: 60px auto;
+}
+
+.video-buttons i.fa-headphones {
+    color: #0ea5e9;
+}
+
+.video-buttons {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.video-buttons i {
+    display: inline-block;
+    margin-right: 6px;
+}
+
+#video-button-acesso a {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    background: #44d056;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 15px rgb(255 255 255 / 30%);
+
+    border: none;
+    border-radius: 0;
+    font-weight: 600;
+    letter-spacing: 0.0333em;
+    line-height: 1.25;
+    padding: 1.1em 1.44em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: opacity 0.15s linear;
+}
+
+.esconder {
+    display: none;
+}
+
+footer {
+    margin: 100px 0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+footer a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 769px) {
+    #logo {
+        width: 19%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #like {
+        width: 57%;
+        display: block;
+        margin: 20px auto 0 auto;
+    }
+}
+
+
+i.go-down {
+    margin-bottom: 1.25rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    color: #0ea5e9;
+}
+
+.headline {
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.headline i {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.headline h3 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+}
+
+.btn-spacing {
+    margin-top: 3.5rem;
+    margin-bottom: 5rem;
+}
+
+.btn-buy {
+    padding: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    background: #00c544;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.prints {
+    display: flex;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-bottom: 3.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: #0ea5e9;
+}
+
+.prints h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.prints h2 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    text-align: center;
+}
+
+.prints .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 876px;
+    gap: 1rem;
+}
+
+.prints .container img {
+    border-radius: 0.25rem;
+    width: 33.3%;
+}
+
+.steps {
+    display: flex;
+    margin-bottom: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.steps>h3 {
+    display: flex;
+    margin-bottom: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    font-size: 2.25rem;
+}
+
+.steps .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1.25rem;
+    max-width: 1140px;
+}
+
+.steps .container > div {
+    width: 33.3%;
+}
+
+.steps .container img {
+    width: 100%;
+}
+
+.steps .container .step {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.steps .container .step .card {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    text-align: left;
+    border-radius: 0.5rem;
+    background-color: #0ea5e9;
+    border: 1px solid #7dd3fc;
+}
+
+
+
+.line-through {
+    text-decoration: line-through;
+    color: #0ea5e9;
+}
+
+.discount-card .price-comparison {
+    margin-top: -0.75rem;
+}
+
+@media (orientation: portrait) {
+    section {
+        padding: 0 1rem;
+    }
+
+    * {
+        font-size: 90%;
+    }
+
+    .headline {
+        text-align: left;
+    }
+
+    .headline h3 {
+        font-size: 4vw;
+    }
+
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .testimonials>div {
+        width: 100%;
+    }
+
+    .btn-spacing {
+        display: flex;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .prints .container {
+        flex-direction: column;
+    }
+
+    .prints .container img {
+        width: 100%;
+    }
+
+    .steps .container {
+        flex-direction: column;
+    }
+
+    .steps .container div {
+        width: 100%;
+    }
+}
