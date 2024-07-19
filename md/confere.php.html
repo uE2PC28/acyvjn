@@ -1,0 +1,94 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link data-optimized="1" rel="stylesheet" href="assets/css/5921624bf5bbe4c8c091ef09226fa76f-16.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com/">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+        <link data-optimized="1" href="assets/css/1c7a3d2ee9759dc256d915300855c494-16.css" rel="stylesheet">
+        <link data-optimized="1" href="assets/css/ba9cbbe9240a489628be8eb27c56db8a-16.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style-16.css">
+        <link rel="stylesheet" href="assets/css/animated-16.css">
+        <link rel="shortcut icon" href="assets/images/faveicon-16.png">
+        <title>:: Cupom da Vez ::</title>
+        <script src="../scripts/utms/latest-16.js" async="" defer=""></script>
+    </head>
+
+    <body class="fundoWhite">
+
+        <div class="corteLayoutTop"></div>
+
+        <div id="p1" style="background-color: #FFFFFF; padding: 15px 0 50px 0;">
+       
+            <img style="width: 35%; margin: auto; margin-left: 10px; position: relative; margin-top: 10px;" src="assets/images/logo2-14.png">
+
+            <form action="cupom1.php" method="POST" id="formCadastro" onsubmit="document.getElementById('submit').disabled = true;">
+
+                <div class="coolinput">
+
+                    <div id="textoGuiaCpf">
+                        <h1 id="textoTitulo" style="font-family:'RecoletaBold'; font-size: 20px; margin: 25px 0 0 25px; color: #000000;">agora só falta conferir!</h1>
+                        <p id="textoInformacao" style="font-size: 15px; margin: 0 0 20px 25px;">Confira todos os seus dados antes de finalizar o cadastro.</p>
+                    </div>
+
+                    <div id="verificaCpf">
+                        <label for="cpfUsuario" id="textoCpf" class="text">CPF</label>
+                        <input type="text" value="" placeholder="Digite seu CPF" name="cpfUsuario" id="cpfUsuario" class="input" inputmode="numeric" autocomplete="off" required="" onkeyup="verificacaoCpf()">
+                        <div style="margin: -5px 0 0 10px;"><span id="validacaoCpf"></span></div>
+                    </div>
+
+                    <div id="verificaNome" style="position: relative;">
+                        <label for="cpfUsuario" id="textoNome" class="text">NOME</label>
+                        <input type="text" value="" placeholder="Digite seu NOME" name="nomeUsuario" id="nomeUsuario" class="input" autocomplete="off" required="" onkeyup="verificacaoNome()" onblur="desabilitarCampoNome()">
+                        <img class="imgEdit" id="imgEditNome" onclick="habilitarCampoNome()" src="assets/images/icons/edit.png">
+                        <div style="margin: -5px 0 0 10px;"><span id="validacaoNome"></span></div>
+                    </div>
+
+                    <div id="verificaCelular" style="position: relative;">
+                        <label for="celularUsuario" id="textoCelular" class="text">CELULAR</label> 
+                        <input type="text" value="" placeholder="Digite seu CELULAR" name="celularUsuario" id="celularUsuario" inputmode="numeric" class="input" autocomplete="off" required="" onkeyup="verificacaoCelular()" onblur="desabilitarCampoCelular()">
+                        <img class="imgEdit" id="imgEditCelular" onclick="habilitarCampoCelular()" src="assets/images/icons/edit.png">
+                        <div style="margin: -5px 0 0 10px;"><span id="validacaoCelular"></span></div>
+                    </div>
+
+                    <div style="position: relative;" id="verificaEmail">
+                        <label style="z-index: 9999;" for="emailUsuario" id="textoEmail" class="text">EMAIL</label>
+                        <input style="text-transform: lowercase;" type="text" value="" placeholder="Digite seu EMAIL" name="emailUsuario" id="emailUsuario" class="input emailUsuario" autocomplete="off" required="" onkeyup="verificacaoEmail()" onblur="verificacaoEmail(); desabilitarCampoEmail()">
+                        <img class="imgEdit" id="imgEditEmail" onclick="habilitarCampoEmail()" src="assets/images/icons/edit.png">
+                        <input id="emailAux" class="aux" autocomplete="off">
+                        <div style="position: absolute;"><span id="validacaoEmail"></span></div>
+                    </div>
+
+                    <div style="position: relative;">
+                        <button style="position: unset; width: 100%; margin-top: 30px;" id="continuarCadastroInativo" class="continuarInativo" disabled="">Continuar</button>
+                        <button style="-webkit-animation: pulse 1.5s infinite; position: unset; width: 100%; margin-top: 30px;" id="continuarCadastroAtivo" class="continuarAtivo" data-callback='onSubmit' id="submit" data-action='submit'>Continuar</button>
+                    </div>
+                
+                </div>
+            </form>           
+        </div>
+        
+
+        <script src="../ajax/libs/jquery/3.2.1/jquery.min-1.js"></script>
+        <script type="text/javascript" src="../ajax/libs/jquery.mask/1.14.0/jquery.mask-12.js"></script>
+        <script src="../ajax/libs/materialize/0.100.2/js/materialize.min-1.js"></script>
+        <script src="assets/js/verificacaoCadastro.js"></script>
+        <script src="assets/js/funcoes-16.js"></script>
+        <script disable-devtool-auto="" src='../npm/disable-devtool-13' url='https://google.com.br'></script>
+        <script>
+            // MÁSCARA INPUT
+            jQuery(function($){
+                $("#cpfUsuario").mask("999.999.999-99");
+                
+                $("#celularUsuario").mask("(99) 99999-9999");
+            });
+            // MÁSCARA INPUT
+        </script>
+       
+    </body>
+</html>
